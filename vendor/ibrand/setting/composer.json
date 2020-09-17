@@ -1,0 +1,43 @@
+{
+  "name": "ibrand/setting",
+  "type": "library",
+  "description": "ibrand setting component",
+  "keywords": [
+    "ibrand",
+    "setting",
+    "component"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "shjchen",
+      "email": "ibrand.shjchen@foxmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0"
+  },
+  "require-dev": {
+    "mockery/mockery": "~0.9",
+    "phpunit/phpunit": "~6.0",
+    "orchestra/testbench": "~3.5",
+    "orchestra/database": "^3.5"
+  },
+  "autoload": {
+    "files": [
+      "src/helpers.php"
+    ],
+    "psr-4": {
+      "iBrand\\Component\\Setting\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "iBrand\\Component\\Setting\\ServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
